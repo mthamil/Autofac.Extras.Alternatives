@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Autofac;
-using Autofac.Extras.KeyedDictionary;
+using Autofac.Extras.AlternativeRelationships;
 using Xunit;
 
 namespace Tests.Unit
@@ -10,7 +10,7 @@ namespace Tests.Unit
     {
         public KeyedServiceDictionaryTests()
         {
-            _builder.RegisterKeyedDictionary();
+            _builder.RegisterAlternativeRelationships();
 
             _builder.RegisterType<List<string>>()
                     .Keyed<IList<string>>(3);
@@ -39,9 +39,14 @@ namespace Tests.Unit
 
             // Assert.
             Assert.NotNull(index);
+
             Assert.IsType<DependencyA>(index["A"]);
             Assert.IsType<DependencyB>(index["B"]);
             Assert.IsType<DependencyC>(index["C"]);
+
+            Assert.Equal("A", index["A"].Name);
+            Assert.Equal("B", index["B"].Name);
+            Assert.Equal("C", index["C"].Name);
         }
 
         [Fact]
@@ -127,7 +132,7 @@ namespace Tests.Unit
             var values = index.Select(kvp => kvp.Value);
 
             // Assert.
-            Assert.Equal(new[] { typeof(DependencyA), typeof(DependencyB), typeof(DependencyC) }, values.Select(v => v.GetType()));
+            Assert.Equal(new[] { "A", "B", "C" }, values.Select(v => v.Name));
             Assert.Equal(new[] { "A", "B", "C" }, keys);
         }
 
@@ -146,7 +151,7 @@ namespace Tests.Unit
             var values = index.Select(kvp => kvp.Value);
 
             // Assert.
-            Assert.Equal(new[] { typeof(DependencyA), typeof(DependencyB), typeof(DependencyC) }, values.Select(v => v.GetType()));
+            Assert.Equal(new[] { "A", "B", "C" }, values.Select(v => v.Name));
             Assert.Equal(new[] { "A", "B", "C" }, keys);
         }
 
@@ -203,7 +208,7 @@ namespace Tests.Unit
             var values = index.Values;
 
             // Assert.
-            Assert.Equal(new[] { typeof(DependencyA), typeof(DependencyB), typeof(DependencyC) }, values.Select(v => v.GetType()));
+            Assert.Equal(new[] { "A", "B", "C" }, values.Select(v => v.Name));
         }
 
 

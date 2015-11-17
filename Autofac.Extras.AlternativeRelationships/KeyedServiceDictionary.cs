@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Autofac.Core;
 
-namespace Autofac.Extras.KeyedDictionary
+namespace Autofac.Extras.AlternativeRelationships
 {
     internal class KeyedServiceDictionary<TKey, TValue> : IReadOnlyDictionary<TKey, TValue>
     {

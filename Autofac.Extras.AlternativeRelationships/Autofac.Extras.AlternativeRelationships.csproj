@@ -7,8 +7,8 @@
     <ProjectGuid>{EA54C1D6-F7A2-4C0F-95D5-8DE8E5B62A78}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Autofac.Extras.KeyedDictionary</RootNamespace>
-    <AssemblyName>Autofac.Extras.KeyedDictionary</AssemblyName>
+    <RootNamespace>Autofac.Extras.AlternativeRelationships</RootNamespace>
+    <AssemblyName>Autofac.Extras.AlternativeRelationships</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,13 +44,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KeyedRegistrationExtensions.cs" />
-    <Compile Include="KeyedServiceDictionaryRegistrationSource.cs" />
+    <Compile Include="AlternativeRegistrationExtensions.cs" />
     <Compile Include="KeyedServiceDictionary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -84,9 +84,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Autofac.Extras.KeyedDictionary\Autofac.Extras.KeyedDictionary.csproj">
+    <ProjectReference Include="..\Autofac.Extras.AlternativeRelationships\Autofac.Extras.AlternativeRelationships.csproj">
       <Project>{ea54c1d6-f7a2-4c0f-95d5-8de8e5b62a78}</Project>
-      <Name>Autofac.Extras.KeyedDictionary</Name>
+      <Name>Autofac.Extras.AlternativeRelationships</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
