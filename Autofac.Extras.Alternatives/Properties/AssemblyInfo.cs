@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Autofac.Extras.Alternatives")]
-[assembly: AssemblyDescription("An Autofac extension that enables the use of IReadOnlyDictionary instead of IIndex.")]
+[assembly: AssemblyDescription("An Autofac extension that adds support for alternatives to some of the Autofac-provided relationship types.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Matt Hamilton")]
 [assembly: AssemblyProduct("Autofac.Extras.Alternatives")]

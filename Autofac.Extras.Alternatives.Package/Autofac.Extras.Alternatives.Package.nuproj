@@ -30,15 +30,16 @@
     <Title>Autofac.Extras.Alternatives</Title>
     <Authors>Matt Hamilton</Authors>
     <Owners>Matt Hamilton</Owners>
-    <Summary>Autofac.Extras.Alternatives.Package</Summary>
-    <Description>Autofac.Extras.Alternatives.Package</Description>
+    <Summary>An Autofac extension that adds support for alternatives to some of the Autofac-provided relationship types.</Summary>
+    <Description>An Autofac extension that adds support for alternatives to some of the Autofac-provided relationship types. This includes recognition of IReadOnlyDictionary&lt;TKey, TValue&gt; as a relationship type that provides the same capabilities as the built-in Autofac type IIndex&lt;TKey, TValue&gt;.</Description>
     <ReleaseNotes>
     </ReleaseNotes>
     <ProjectUrl>https://github.com/mthamil/Autofac.Extras.Alternatives</ProjectUrl>
     <LicenseUrl>http://www.apache.org/licenses/LICENSE-2.0.txt</LicenseUrl>
-    <Copyright>
-    </Copyright>
-    <Tags>Autofac.Extras.AlternativeRelationships.Package</Tags>
+    <Copyright>Copyright © Matt Hamilton 2015</Copyright>
+    <Tags>
+    </Tags>
+    <RequireLicenseAcceptance>true</RequireLicenseAcceptance>
   </PropertyGroup>
   <Import Project="$(NuProjPath)\NuProj.targets" />
 </Project>
