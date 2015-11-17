@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Autofac.Extras.AlternativeRelationships")]
+[assembly: AssemblyTitle("Autofac.Extras.Alternatives")]
 [assembly: AssemblyDescription("An Autofac extension that enables the use of IReadOnlyDictionary instead of IIndex.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Matt Hamilton")]
-[assembly: AssemblyProduct("Autofac.Extras.AlternativeRelationships")]
+[assembly: AssemblyProduct("Autofac.Extras.Alternatives")]
 [assembly: AssemblyCopyright("Copyright © Matt Hamilton 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

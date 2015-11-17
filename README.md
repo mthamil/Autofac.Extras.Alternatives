@@ -1,4 +1,4 @@
-Autofac.Extras.AlternativeRelationships
+Autofac.Extras.Alternatives
 =======================
 An Autofac extension that adds support for alternatives to some of the Autofac-provided relationship types.
 
@@ -10,7 +10,7 @@ on Autofac for these types in libraries.
 
 Download
 ========
-Visit https://www.nuget.org/packages/Autofac.Extras.IndexAlternative/ to download.
+Visit https://www.nuget.org/packages/Autofac.Extras.Alternatives/ to download.
 
 Usage
 =====

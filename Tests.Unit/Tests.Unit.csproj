@@ -37,6 +37,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Package|AnyCPU'">
+    <OutputPath>bin\Package\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
@@ -84,9 +93,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Autofac.Extras.AlternativeRelationships\Autofac.Extras.AlternativeRelationships.csproj">
+    <ProjectReference Include="..\Autofac.Extras.Alternatives\Autofac.Extras.Alternatives.csproj">
       <Project>{ea54c1d6-f7a2-4c0f-95d5-8de8e5b62a78}</Project>
-      <Name>Autofac.Extras.AlternativeRelationships</Name>
+      <Name>Autofac.Extras.Alternatives</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

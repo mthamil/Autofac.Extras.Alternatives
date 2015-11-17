@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Autofac.Extras.AlternativeRelationships
+namespace Autofac.Extras.Alternatives
 {
     public static class AlternativeRegistrationExtensions
     {
