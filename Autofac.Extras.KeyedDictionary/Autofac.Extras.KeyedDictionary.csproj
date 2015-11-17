@@ -7,8 +7,8 @@
     <ProjectGuid>{EA54C1D6-F7A2-4C0F-95D5-8DE8E5B62A78}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Autofac.Extras.NativeKeyed</RootNamespace>
-    <AssemblyName>Autofac.Extras.NativeKeyed</AssemblyName>
+    <RootNamespace>Autofac.Extras.KeyedDictionary</RootNamespace>
+    <AssemblyName>Autofac.Extras.KeyedDictionary</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KeyedRegistrationExtensions.cs" />
+    <Compile Include="KeyedServiceDictionaryRegistrationSource.cs" />
+    <Compile Include="KeyedServiceDictionary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,15 +1,14 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Autofac.Extras.IndexAlternative")]
-[assembly: AssemblyDescription("An Autofac extension that enables the use of IReadOnlyDictionary instead of IIndex.")]
+[assembly: AssemblyTitle("Tests.Unit")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Matt Hamilton")]
-[assembly: AssemblyProduct("Autofac.Extras.IndexAlternative")]
+[assembly: AssemblyProduct("Tests.Unit")]
 [assembly: AssemblyCopyright("Copyright © Matt Hamilton 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ea54c1d6-f7a2-4c0f-95d5-8de8e5b62a78")]
+[assembly: Guid("251a5fa3-78b5-4558-8cd7-0f0d106d353b")]
 
 // Version information for an assembly consists of the following four values:
 //

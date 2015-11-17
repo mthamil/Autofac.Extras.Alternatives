@@ -1,4 +1,4 @@
-Autofac.Extras.IndexAlternative
+Autofac.Extras.KeyedDictionary
 =======================
 An Autofac extension that adds recognition of `IReadOnlyDictionary<TKey, TValue>` as a relationship type that provides the same
 capabilities as the built-in Autofac type `IIndex<TKey, TValue>`. While Autofac's relationship types are very useful, sometimes 
