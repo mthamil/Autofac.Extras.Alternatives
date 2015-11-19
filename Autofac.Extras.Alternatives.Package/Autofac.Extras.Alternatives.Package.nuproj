@@ -15,13 +15,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ProjectCapability Include="CPS" />
+    <ProjectCapability Include="AssemblyReferences" />
+    <ProjectCapability Include="DeclaredSourceItems" />
+    <ProjectCapability Include="UserSourceItems" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Autofac.Extras.Alternatives\Autofac.Extras.Alternatives.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>6bc5ca2f-b1bf-4448-a023-83009cb7a31b</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup>
-    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(SolutionDir).build\NuProj\</NuProjPath>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(SolutionDir)packages\NuProj.0.10.4-beta-gf7fc34e7d8\tools\</NuProjPath>
   </PropertyGroup>
   <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
   <PropertyGroup Label="Configuration">
