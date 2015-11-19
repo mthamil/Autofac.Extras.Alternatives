@@ -16,6 +16,32 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Unit", "Tests.Unit\Te
 EndProject
 Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "Autofac.Extras.Alternatives.Package", "Autofac.Extras.Alternatives.Package\Autofac.Extras.Alternatives.Package.nuproj", "{6BC5CA2F-B1BF-4448-A023-83009CB7A31B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{014270F8-2685-4489-927B-7BDDE1542C95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuProj", "NuProj", "{DD883C66-0A38-4E67-B66C-0A02164F79AA}"
+	ProjectSection(SolutionItems) = preProject
+		.build\NuProj\Microsoft.Common.NuProj.targets = .build\NuProj\Microsoft.Common.NuProj.targets
+		.build\NuProj\Microsoft.Web.XmlTransform.dll = .build\NuProj\Microsoft.Web.XmlTransform.dll
+		.build\NuProj\NuGet.Core.dll = .build\NuProj\NuGet.Core.dll
+		.build\NuProj\NuGet.exe = .build\NuProj\NuGet.exe
+		.build\NuProj\NuProj.props = .build\NuProj\NuProj.props
+		.build\NuProj\NuProj.targets = .build\NuProj\NuProj.targets
+		.build\NuProj\NuProj.Tasks.dll = .build\NuProj\NuProj.Tasks.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rules", "Rules", "{10DED0B1-95C1-47DA-AD9F-CBE9CDCA547A}"
+	ProjectSection(SolutionItems) = preProject
+		.build\NuProj\Rules\content.xaml = .build\NuProj\Rules\content.xaml
+		.build\NuProj\Rules\folder.xaml = .build\NuProj\Rules\folder.xaml
+		.build\NuProj\Rules\general.browseobject.xaml = .build\NuProj\Rules\general.browseobject.xaml
+		.build\NuProj\Rules\general.xaml = .build\NuProj\Rules\general.xaml
+		.build\NuProj\Rules\none.xaml = .build\NuProj\Rules\none.xaml
+		.build\NuProj\Rules\ProjectItemsSchema.xaml = .build\NuProj\Rules\ProjectItemsSchema.xaml
+		.build\NuProj\Rules\ProjectReference.xaml = .build\NuProj\Rules\ProjectReference.xaml
+		.build\NuProj\Rules\ResolvedProjectReference.xaml = .build\NuProj\Rules\ResolvedProjectReference.xaml
+		.build\NuProj\Rules\scc.xaml = .build\NuProj\Rules\scc.xaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +68,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DD883C66-0A38-4E67-B66C-0A02164F79AA} = {014270F8-2685-4489-927B-7BDDE1542C95}
+		{10DED0B1-95C1-47DA-AD9F-CBE9CDCA547A} = {DD883C66-0A38-4E67-B66C-0A02164F79AA}
 	EndGlobalSection
 EndGlobal
