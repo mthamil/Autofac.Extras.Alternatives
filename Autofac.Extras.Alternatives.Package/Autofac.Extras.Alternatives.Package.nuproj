@@ -17,11 +17,29 @@
   <ItemGroup>
     <ProjectReference Include="..\Autofac.Extras.Alternatives\Autofac.Extras.Alternatives.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include=".build\NuProj\Microsoft.Common.NuProj.targets" />
+    <Content Include=".build\NuProj\Microsoft.Web.XmlTransform.dll" />
+    <Content Include=".build\NuProj\NuGet.Core.dll" />
+    <Content Include=".build\NuProj\NuGet.exe" />
+    <Content Include=".build\NuProj\NuProj.props" />
+    <Content Include=".build\NuProj\NuProj.targets" />
+    <Content Include=".build\NuProj\NuProj.Tasks.dll" />
+    <Content Include=".build\NuProj\Rules\content.xaml" />
+    <Content Include=".build\NuProj\Rules\folder.xaml" />
+    <Content Include=".build\NuProj\Rules\general.browseobject.xaml" />
+    <Content Include=".build\NuProj\Rules\general.xaml" />
+    <Content Include=".build\NuProj\Rules\none.xaml" />
+    <Content Include=".build\NuProj\Rules\ProjectItemsSchema.xaml" />
+    <Content Include=".build\NuProj\Rules\ProjectReference.xaml" />
+    <Content Include=".build\NuProj\Rules\ResolvedProjectReference.xaml" />
+    <Content Include=".build\NuProj\Rules\scc.xaml" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>6bc5ca2f-b1bf-4448-a023-83009cb7a31b</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup>
-    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(ProjectDir).build\NuProj\</NuProjPath>
   </PropertyGroup>
   <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
   <PropertyGroup Label="Configuration">
