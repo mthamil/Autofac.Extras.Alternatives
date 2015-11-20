@@ -211,7 +211,32 @@ namespace Tests.Unit
             Assert.Equal(new[] { "A", "B", "C" }, values.Select(v => v.Name));
         }
 
+        [Fact]
+        public void Test_Explicitly_Registered_Dictionary()
+        {
+            // Arrange.
+            _builder.Register(_ => new Dictionary<int, IDependency> { { 1, new DependencyC() } })
+                    .As<IReadOnlyDictionary<int, IDependency>>();
 
+            _builder.RegisterType<DependencyA>()
+                    .Keyed<IDependency>("A");
+
+            _builder.RegisterType<DependencyB>()
+                    .Keyed<IDependency>("B");
+
+            var container = _builder.Build();
+
+            // Act.
+            var explicitIndex = container.Resolve<IReadOnlyDictionary<int, IDependency>>();
+            var implicitIndex = container.Resolve<IReadOnlyDictionary<string, IDependency>>();
+
+            // Assert.
+            Assert.Equal(new[] { "C" }, explicitIndex.Values.Select(v => v.Name));
+            Assert.IsNotType<KeyedServiceDictionary<int, IDependency>>(explicitIndex);
+
+            Assert.Equal(new[] { "A", "B" }, implicitIndex.Values.Select(v => v.Name));
+            Assert.IsType<KeyedServiceDictionary<string, IDependency>>(implicitIndex);
+        }
 
         interface IDependency
         {

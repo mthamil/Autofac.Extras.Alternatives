@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="AlternativeRegistrationExtensions.cs" />
     <Compile Include="KeyedServiceDictionary.cs" />
+    <Compile Include="KeyedServiceDictionarySource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
