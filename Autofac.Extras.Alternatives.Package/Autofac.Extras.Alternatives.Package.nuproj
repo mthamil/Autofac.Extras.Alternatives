@@ -40,7 +40,7 @@
     <Authors>Matt Hamilton</Authors>
     <Owners>Matt Hamilton</Owners>
     <Summary>An Autofac extension that adds support for alternatives to some of the Autofac-provided relationship types.</Summary>
-    <Description>An Autofac extension that adds support for alternatives to some of the Autofac-provided relationship types. This includes recognition of IReadOnlyDictionary&lt;TKey, TValue&gt; as a relationship type that provides the same capabilities as the built-in Autofac type IIndex&lt;TKey, TValue&gt;.</Description>
+    <Description>An Autofac extension that adds support for alternatives to some of the Autofac-provided relationship types. This currently includes recognition of IReadOnlyDictionary&lt;TKey, TValue&gt; as a relationship type that provides the same capabilities as the built-in Autofac type IIndex&lt;TKey, TValue&gt;.</Description>
     <ReleaseNotes>
     </ReleaseNotes>
     <ProjectUrl>https://github.com/mthamil/Autofac.Extras.Alternatives</ProjectUrl>
