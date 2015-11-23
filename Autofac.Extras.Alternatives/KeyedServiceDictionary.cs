@@ -32,12 +32,12 @@ namespace Autofac.Extras.Alternatives
 
         public int Count => GetServices().Count();
 
-        public bool ContainsKey(TKey key) => _context.IsRegisteredService(GetService(key));
+        public bool ContainsKey(TKey key) => _context.IsRegisteredWithKey<TValue>(key);
 
         public bool TryGetValue(TKey key, out TValue value)
         {
             object instance;
-            if (_context.TryResolveService(GetService(key), out instance))
+            if (_context.TryResolveKeyed(key, typeof(TValue), out instance))
             {
                 value = (TValue)instance;
                 return true;
@@ -46,7 +46,7 @@ namespace Autofac.Extras.Alternatives
             return false;
         }
 
-        public TValue this[TKey key] => (TValue)_context.ResolveService(GetService(key));
+        public TValue this[TKey key] => _context.ResolveKeyed<TValue>(key);
 
         public IEnumerable<TKey> Keys => GetServices().Select(s => s.ServiceKey).Cast<TKey>();
 
@@ -60,7 +60,5 @@ namespace Autofac.Extras.Alternatives
                 where s.ServiceKey is TKey && s.ServiceType == typeof(TValue)
                 select s).ToArray();
         }
-
-        private static KeyedService GetService(TKey key) => new KeyedService(key, typeof(TValue));
     }
 }
