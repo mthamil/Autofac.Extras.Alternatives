@@ -53,4 +53,4 @@ nuget:
 #---------------------------------#
 
 artifacts:
-  - path: Autofac.Extras.Alternatives.Package\bin\Package\Autofac.Extras.Alternatives.*.nupkg
+  - path: Autofac.Extras.Alternatives.Package\bin\$(CONFIGURATION)\Autofac.Extras.Alternatives.*.nupkg
