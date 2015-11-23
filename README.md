@@ -12,7 +12,7 @@ on Autofac for these types in libraries.
 
 Download
 ========
-Visit https://www.nuget.org/packages/Autofac.Extras.Alternatives/ to download.
+Visit [![NuGet](https://img.shields.io/nuget/v/Autofac.Extras.Alternatives.svg)](https://www.nuget.org/packages/Autofac.Extras.Alternatives/) to download.
 
 Usage
 =====
