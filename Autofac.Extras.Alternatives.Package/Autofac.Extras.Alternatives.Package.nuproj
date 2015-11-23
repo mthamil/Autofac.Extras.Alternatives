@@ -36,7 +36,7 @@
   <PropertyGroup Label="Configuration">
     <Id>Autofac.Extras.Alternatives</Id>
     <Version>1.0.0</Version>
-    <Title>Autofac.Extras.Alternatives</Title>
+    <Title>Autofac Alternative Relationship Types</Title>
     <Authors>Matt Hamilton</Authors>
     <Owners>Matt Hamilton</Owners>
     <Summary>An Autofac extension that adds support for alternatives to some of the Autofac-provided relationship types.</Summary>
