@@ -1,5 +1,8 @@
 ﻿namespace Autofac.Extras.Alternatives
 {
+    /// <summary>
+    /// Adds registration syntax for alternative relationship types to <see cref="ContainerBuilder"/>.
+    /// </summary>
     public static class AlternativeRegistrationExtensions
     {
         /// <summary>
