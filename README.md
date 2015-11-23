@@ -20,7 +20,7 @@ Usage
 First, register the alternative relationship types using an extension method on `ContainerBuilder`:
 
 ```C#
-    _builder.RegisterAlternativeRelationships();
+    builder.RegisterAlternativeRelationships();
 ```
 
 Similarly to Autofac's `IIndex<TKey, TValue>`, register types that implement the same interface with a particular key:
@@ -43,11 +43,11 @@ Similarly to Autofac's `IIndex<TKey, TValue>`, register types that implement the
 
     ...
 
-    _builder.RegisterType<DependencyA>()
-            .Keyed<IDependency>("A");
+    builder.RegisterType<DependencyA>()
+           .Keyed<IDependency>("A");
 
-    _builder.RegisterType<DependencyB>()
-            .Keyed<IDependency>("B");
+    builder.RegisterType<DependencyB>()
+           .Keyed<IDependency>("B");
 ```
 
 Then, register a type that has a constructor declared that accepts an `IReadOnlyDictionary<TKey, TValue>` corresponding to the keyed types:
@@ -57,6 +57,7 @@ Then, register a type that has a constructor declared that accepts an `IReadOnly
     {
         public SomeComponent(IReadOnlyDictionary<string, IDependency> index)
         {
+            ...
         }
     }
 ```
